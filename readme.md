@@ -39,3 +39,15 @@ The "Update Patient" page allows users to edit an existing patient record in the
 A normal user is not allowed to add , delete or update a patient record.
 
 ![Normal user](/images/auth_normal_user.png)
+
+## Spring Security
+
+### In-memory authentication
+<script src="https://gist.github.com/MohamedAmineALLAF/d85497dd7d90282317c5d1955c9db040.js"></script>
+
+### Authentication using JDBC
+<script src="https://gist.github.com/MohamedAmineALLAF/468eb9c209a6d033303d9378d195aa18.js"></script>
+
+### Authentication using UserDetailsService 
+#### Add users and roles
+<script src="https://gist.github.com/MohamedAmineALLAF/8bb272e863b18dd3a06e63fb86e7b237.js"></script>
