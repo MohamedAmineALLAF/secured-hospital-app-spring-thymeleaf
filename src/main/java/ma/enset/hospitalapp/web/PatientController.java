@@ -41,7 +41,7 @@ public class PatientController {
     }
     @GetMapping("/admin/formPatient")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public String formPatient(Model model ){
+    public String formPatient(Model model){
         model.addAttribute("patient",new Patient());
         return "formPatient";
     }
@@ -50,7 +50,7 @@ public class PatientController {
     public String savePatient(@Valid Patient patient, BindingResult bindingResult){
         if (bindingResult.hasErrors()) return "formPatient";
         patientRepository.save(patient);
-        return "formPatient";
+        return "redirect:/user/index";
     }
     @GetMapping("/admin/editPatient")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
