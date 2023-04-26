@@ -20,7 +20,7 @@ The "Show All Patients" page displays a list of all patients in the database. Us
 
 The index page also has a search functionnality.
 
-![Show All Patients](/images/index.png)
+![Show All Patients](/images/indexSearch.png)
 
 ### Activity 4: Add a New Patient
 
